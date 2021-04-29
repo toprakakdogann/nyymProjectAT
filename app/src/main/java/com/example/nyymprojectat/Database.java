@@ -32,7 +32,7 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put("password",password);
         long result = myDB.insert("users",null,contentValues);
 
-        if (result == 1){
+        if (result == -1){
             return false;
         }
         else{
@@ -57,7 +57,7 @@ public class Database extends SQLiteOpenHelper {
 
     public Boolean checkusernamePassword(String username, String password){
         SQLiteDatabase myDB = this.getWritableDatabase();
-        Cursor cursor = myDB.rawQuery("select * from users where username = ? and password = ?",new String[] {username});
+        Cursor cursor = myDB.rawQuery("select * from users where username = ? and password = ?",new String[] {username,password});
         if (cursor.getCount()>0){
             return true;
         }

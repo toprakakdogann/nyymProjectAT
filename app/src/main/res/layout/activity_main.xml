@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/new_logo"
         android:scaleType="centerCrop"/>
 
 
@@ -27,6 +27,8 @@
         android:layout_below="@id/imageView"/>
 
     <EditText
+        android:inputType="textPassword"
+
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,6 +40,7 @@
         android:layout_below="@id/imageView"/>
 
     <EditText
+        android:inputType="textPassword"
         android:id="@+id/renterPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +53,7 @@
 
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kayıt Ol"
@@ -62,5 +65,29 @@
         android:layout_marginTop="15dp"
         android:textSize="15dp"/>
 
+    <TextView
+        android:id="@+id/textas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zaten bir hesabınız var mı?"
+        android:layout_below="@+id/btnSignUp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:layout_below="@+id/textas"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"/>
 
 </RelativeLayout>
