@@ -14,17 +14,17 @@ public class tavukSis implements menu {
 
     @Override
     public String getAd() {
-        return null;
+        return ad;
     }
 
     @Override
     public String getIcerik() {
-        return null;
+        return icerik;
     }
 
     @Override
     public int getFiyat() {
-        return 0;
+        return fiyat;
     }
 
     @Override

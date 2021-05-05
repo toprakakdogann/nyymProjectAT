@@ -1,6 +1,5 @@
 package main.java.designpatterns.factory;
 
-import main.java.designpatterns.factory.menu;
 
 public class adanaKebap implements menu {
 
@@ -16,17 +15,17 @@ public class adanaKebap implements menu {
 
     @Override
     public String getAd() {
-        return null;
+        return ad;
     }
 
     @Override
     public String getIcerik() {
-        return null;
+        return icerik;
     }
 
     @Override
     public int getFiyat() {
-        return 0;
+        return fiyat;
     }
 
     @Override

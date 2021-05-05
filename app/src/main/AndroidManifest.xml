@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NyymProjectAT">
         <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".loginActivity" />
+        <activity android:name=".loginActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
