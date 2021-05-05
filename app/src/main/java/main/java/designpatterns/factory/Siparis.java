@@ -12,7 +12,7 @@ public class Siparis {
 
         menu adanaKebap = rest.menuGetir("adanaKebap", "250 Gr Adana Kebap, Çoban Salata", 40);
 
-        menu tavukSis = rest.menuGetir("Tavuk Şiş", "250 Gr Tavuk Şiş, Çoban Salata,", 30);
+        menu tavukSis = rest.menuGetir("tavukSis", "250 Gr Tavuk Şiş, Çoban Salata,", 30);
 
         String sonuc = "Siparişiniz : ";
         String ad = "Ad : ";
