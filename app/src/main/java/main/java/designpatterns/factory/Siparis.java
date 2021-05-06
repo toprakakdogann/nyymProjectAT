@@ -14,6 +14,10 @@ public class Siparis {
 
         menu tavukSis = rest.menuGetir("tavukSis", "250 Gr Tavuk Şiş, Çoban Salata,", 30);
 
+        menu iskender = rest.menuGetir("iskender", "250 Gr İskender, Çoban Salata,", 35);
+
+
+
         String sonuc = "Siparişiniz : ";
         String ad = "Ad : ";
         String icerik = "İçerik : ";
@@ -22,10 +26,10 @@ public class Siparis {
 
 
         sonuc =  sonuc + "\n"+sonuc1+"\n"+ ad +adanaKebap.getAd() +"\n"+ icerik +adanaKebap.getIcerik()+ "\n"+fiyat+ adanaKebap.getFiyat() + "₺"
-                + "\n"+sonuc1+"\n"+ ad +tavukSis.getAd() +"\n"+ icerik +tavukSis.getIcerik()+ "\n"+fiyat+ tavukSis.getFiyat() + "₺";
+                + "\n"+sonuc1+"\n"+ ad +tavukSis.getAd() +"\n"+ icerik +tavukSis.getIcerik()+ "\n"+fiyat+ tavukSis.getFiyat() + "₺"
+                + "\n"+sonuc1+"\n"+ ad +iskender.getAd() +"\n"+ icerik +iskender.getIcerik()+ "\n"+fiyat+ iskender.getFiyat() + "₺";
 
         return sonuc;
-
     }
 
 }

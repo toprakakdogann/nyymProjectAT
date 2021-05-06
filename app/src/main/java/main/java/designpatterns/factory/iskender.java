@@ -1,12 +1,13 @@
 package main.java.designpatterns.factory;
 
-public class tavukSis implements menu {
+
+public class iskender implements menu {
 
     private String ad;
     private  String icerik;
     private int fiyat;
 
-    public tavukSis(String ad, String icerik, int fiyat) {
+    public iskender(String ad, String icerik, int fiyat) {
         this.ad = ad;
         this.icerik = icerik;
         this.fiyat = fiyat;
@@ -29,7 +30,7 @@ public class tavukSis implements menu {
 
     @Override
     public String toString() {
-        return "tavukSis{" +
+        return "iskender{" +
                 "ad='" + ad + '\'' +
                 ", icerik='" + icerik + '\'' +
                 ", fiyat=" + fiyat +
