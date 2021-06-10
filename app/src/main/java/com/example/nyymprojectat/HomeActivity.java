@@ -1,27 +1,65 @@
 package com.example.nyymprojectat;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
-import main.java.designpatterns.factory.Siparis;
-import main.java.designpatterns.factory.menu;
-import main.java.designpatterns.factory.restaurant;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView myTextv;
+     Button btnSepet;
+     ImageButton btnbtnsepet,btnbtnsepet1,btnbtnsepet2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Siparis mSiparis = new Siparis();
 
-        myTextv = (TextView) findViewById(R.id.myTextv);
-        myTextv.setText(mSiparis.getSiparis());
+        btnSepet = (Button) findViewById(R.id.btnSepet);
 
+        btnbtnsepet = (ImageButton) findViewById(R.id.btnbtnsepet);
+        btnbtnsepet1 = (ImageButton) findViewById(R.id.btnbtnsepet1);
+        btnbtnsepet2 = (ImageButton) findViewById(R.id.btnbtnsepet2);
+
+
+
+
+
+
+        btnbtnsepet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+        btnbtnsepet1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+        btnbtnsepet2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+
+
+        btnSepet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(),SepetActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

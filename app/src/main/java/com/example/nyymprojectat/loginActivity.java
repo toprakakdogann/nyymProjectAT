@@ -41,7 +41,7 @@ public class loginActivity extends AppCompatActivity{
                     Boolean result = myDB.checkusernamePassword(user,pass);
                     if(result == true){
                         Log.i("test2","Test başarılı, giriş yapıldı.");
-                        Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+                        Intent intent = new Intent(getApplicationContext(),mainMenu.class);
                         startActivity(intent);
                     }
                     else

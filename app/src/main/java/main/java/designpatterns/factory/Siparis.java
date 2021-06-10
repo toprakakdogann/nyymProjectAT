@@ -18,18 +18,20 @@ public class Siparis {
 
 
 
-        String sonuc = "Siparişiniz : ";
+        String sonuc = "Sepetiniz : ";
         String ad = "Ad : ";
         String icerik = "İçerik : ";
         String fiyat = "Fiyat : ";
         String sonuc1 = "---------------------------------------------------";
 
-
         sonuc =  sonuc + "\n"+sonuc1+"\n"+ ad +adanaKebap.getAd() +"\n"+ icerik +adanaKebap.getIcerik()+ "\n"+fiyat+ adanaKebap.getFiyat() + "₺"
                 + "\n"+sonuc1+"\n"+ ad +tavukSis.getAd() +"\n"+ icerik +tavukSis.getIcerik()+ "\n"+fiyat+ tavukSis.getFiyat() + "₺"
                 + "\n"+sonuc1+"\n"+ ad +iskender.getAd() +"\n"+ icerik +iskender.getIcerik()+ "\n"+fiyat+ iskender.getFiyat() + "₺";
 
-        return sonuc;
+
+    return sonuc;
     }
+
+
 
 }

@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".SepetActivity">
 
-    <ImageView
-        android:id="@+id/logoCzn"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/footerlogo"
-        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/seper"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="Sepetiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card"
+        android:id="@+id/cardi"
         android:clickable="true"
         app:cardElevation="5dp"
-        android:layout_below="@+id/logoCzn"
+        android:layout_below="@+id/seper"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="8dp"
         android:layout_width="match_parent"
@@ -29,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
             <ImageView
-                android:src="@drawable/as"
+                android:src="@drawable/footerlogo"
                 android:layout_gravity="left"
                 android:gravity="center"
                 android:paddingLeft="10dp"
@@ -60,24 +63,23 @@
                 android:paddingRight="60dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-            
+
             <ImageButton
-                android:id="@+id/btnbtnsepet"
+                android:id="@+id/btnbtndelete"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:src="@drawable/shopping"
+                android:src="@drawable/delete"
                 android:background="@color/purple_700"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
+        android:id="@+id/cardi1"
         android:clickable="true"
         app:cardElevation="5dp"
-        android:layout_below="@+id/card"
+        android:layout_below="@+id/cardi"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="8dp"
         android:layout_width="match_parent"
@@ -122,21 +124,21 @@
                 android:layout_height="wrap_content"/>
 
             <ImageButton
-                android:id="@+id/btnbtnsepet1"
+                android:id="@+id/btnbtndelete1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:src="@drawable/shopping"
+                android:src="@drawable/delete"
                 android:background="@color/purple_700"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
+        android:id="@+id/cardi2"
         android:clickable="true"
         app:cardElevation="5dp"
-        android:layout_below="@+id/card1"
+        android:layout_below="@+id/cardi1"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="8dp"
         android:layout_width="match_parent"
@@ -181,31 +183,29 @@
                 android:layout_height="wrap_content"/>
 
             <ImageButton
-                android:id="@+id/btnbtnsepet2"
+                android:id="@+id/btnbtndelete2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:src="@drawable/shopping"
+                android:src="@drawable/delete"
                 android:background="@color/purple_700"/>
         </LinearLayout>
+
+
 
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btnSepet"
+        android:id="@+id/btnOdeme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sepete Git"
+        android:text="Ödeme Yap"
         android:textAllCaps="false"
-        android:layout_below="@+id/card2"
+        android:layout_below="@+id/cardi2"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:layout_marginTop="20dp"
         android:textSize="15dp"/>
-
-
-
-
-
 </RelativeLayout>
+
